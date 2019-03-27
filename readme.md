@@ -1,14 +1,10 @@
-
-## Android Phone Notifier
+# Android Phone Notifier
 
 You might be surprised to find how easy it is to control an Android phone with an Arduino. We're using a Leonardo board to emulate a keyboard, and use this to send commands to the phone. In this project, we've hooked up an Ultrasonic Sensor Module as the trigger, and then commanding the phone to send a text message with the distance measured if something is detected too close, but like any Arduino project, you can customize it as much as you like.
 
 ![](images/finalised.png)
 
-The catch is that your phone must support OTG, or ‘On-The-Go' technology. This simply means that the USB connector on your phone (which normally goes to a ‘host' device like a computer), can also accept connections to ‘slave' devices like USB sticks, mouses and keyboards. Then all you need is an OTG adapter like
-
-[WC7725](https://jaycar.com.au/p/WC7725)
-. Here's the secret- we need to get it to send the right sequence of keystrokes to do what we want- in this case, send an SMS when a sensor is triggered.
+The catch is that your phone must support OTG, or ‘On-The-Go' technology. This simply means that the USB connector on your phone (which normally goes to a ‘host' device like a computer), can also accept connections to ‘slave' devices like USB sticks, mouses and keyboards. Then all you need is an OTG adapter like [WC7725](https://jaycar.com.au/p/WC7725). Here's the secret- we need to get it to send the right sequence of keystrokes to do what we want- in this case, send an SMS when a sensor is triggered.
 
 If you're not sure if your phone supports OTG, then you can try plugging a keyboard into an OTG adapter into your phone, and seeing if it responds and registers keystrokes. If it does, then you're good to go.
 
@@ -53,6 +49,7 @@ Down, down, down, down, down (into quick access area)
 Left, left (on top of Messaging Icon)
 Enter (Start Messaging app)
 ```
+
 We've used an app in the quick access area because it appears
 on every page, and it doesn't matter what page we're on.
 
