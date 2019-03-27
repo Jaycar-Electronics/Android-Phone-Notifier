@@ -90,7 +90,8 @@ sendcmds(cmds);
 The sendcmds() function can send an array of commands, as shown above, or even a single command, eg:
 
 ```c
-sendcmds(176);              //enter```
+sendcmds(176);              //enter
+```
 
 And it places a one second delay after each keystroke so as to not overwhelm the phone. You might find you need a longer delay in some cases (especially if the action is opening an app).
 
